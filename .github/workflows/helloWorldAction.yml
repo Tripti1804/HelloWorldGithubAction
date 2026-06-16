@@ -41,4 +41,4 @@ jobs:
 
       # Step 4: Execute the script using its relative path
       - name: Run hello.py script
-        run: python scripts/hello.py
+        run: python .github/scripts/hello.py
