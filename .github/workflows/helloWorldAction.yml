@@ -1,0 +1,19 @@
+name: Hello World Workflow
+
+# Controls when the automation will run
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: # Allows you to manually run this workflow from the Actions tab
+
+# A workflow run is made up of one or more jobs
+jobs:
+  say-hello:
+    # The type of virtual machine runner the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed
+    steps:
+      # Step 1: Print the classic message to the console log
+      - name: Run Hello World
+        run: echo "Hello, World!"
